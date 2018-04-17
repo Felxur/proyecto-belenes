@@ -27,16 +27,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e4f00', end
 	.box1{
 		border:1px solid black;
 	}
-
+	.titulo1{
+		font-size: 50px;
+		font-weight: bold;
+		background-color: grey;
+	}
+	.titulotexto{
+		padding-left: 30%;
+		font-size: 20px;
+	}
 	.box2{
 
 
 	}
 
 	.personbox{
+		margin-top: 50px;
+		padding-right:75px; 
+		padding-left:75px
 
 	}
 	.person{
+		font-size: 25px;
+		text-decoration: underline;	
+
 
 	}
 	.persondescrip{
@@ -47,7 +61,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e4f00', end
 </head>
 
 <body>
-	<div class="container-fluid"></div>
+
 	<div class="bs-example">
 	    <ul class="list-inline menu">
 	        <li><a href="galeria.html">Galeria</a></li>
@@ -57,13 +71,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e4f00', end
 	    </ul>
 	</div>
 
-	<div class="container-fluid section1">
+	<div class="container section1">
 		<div class="row box1">
-			<div class="col-mx-6">
-				<p>¿Por que ser belenista?</p>
+			<div class="col-md-6 text-center titulo1">
+				<p>¿Por que ser Belenista?</p>
 			</div>
-			<div class="col-mx-6">
-				<ul>
+			<div class="col-md-6">
+				<ul class="titulotexto">
 					<li>Es una gran practica imaginativa</li>
 					<li>Es ideal para entretener a los peques</li>
 					<li>Una gran manera de reunir a la familia </li>
@@ -71,19 +85,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e4f00', end
 			</div>
 		</div>
 	</div>
-
-	<div class="row box2">
-		<div class="col-mx-6 personbox">
-			<p class="person">Clarisa</p>
-			<p class="persondescrip">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </p>
+<div class="container">
+		<div class="row box2">
+			<div class="col-sm-6 personbox">
+				<p class="person text-center">Clarisa</p>
+				<p class="persondescrip">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </p>
+			</div>
+			<div class="col-sm-6 personbox">
+				<p class="person text-center">Conchi</p>
+				<p class="persondescrip">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+			</div>
 		</div>
-		<div class="col-mx-6 personbox">
-			<p class="person">Conchi</p>
-			<p class="persondescrip">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-		</div>
-
 	</div>
 
 	<footer class="container-fluid">
