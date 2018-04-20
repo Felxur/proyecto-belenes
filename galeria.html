@@ -13,16 +13,53 @@
 	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">		
 	<link rel="stylesheet" href="lightbox/css/lightbox.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/><link rel="stylesheet" type="text/css" href="css/galery.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<!--<script type="text/javascript" src="js/galery.js"></script>-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		$("#galerybutton").click(function(){
+			$("#galery").slideToggle(function(){
+				if($("#galery").css("display")=="inline-block")
+					$("#galerybutton").html("Ocultar");
+				else
+					$("#galerybutton").html("Mostrar");
+			});
+		});
+		$("#galerybutton2").click(function(){
+			$("#galery2").slideToggle(function(){
+				if($("#galery2").css("display")=="inline-block")
+					$("#galerybutton2").html("Ocultar");
+				else
+					$("#galerybutton2").html("Mostrar");
+			});
+		});
+	});
+
+	</script>
 	<style type="text/css"> 
+		.imghide{
+			display:none;
+		}
+		.jumboconcurso{
+			margin-bottom: 35px;
+			padding-bottom: 20px;
+			border: 2px black solid;
+		}
 
+		.img-thumbnail{
+			height: 300px;
+			width: 400px;
+			
+
+		}
 	</style>
-		
-</head>
 
+</head>
 <body>
+	<script src="lightbox/js/lightbox.min.js"></script>
+
 	<div class="jumbotron">
 		<div class="container"> 		
 			<div class="row">
@@ -51,31 +88,85 @@
 		</div>
 	</nav>
 
-	<div class="jumbotron">
-		<div class="container">
-			<h1 class="text-center">Belen Concurso 2017</h1>
+	<!--Concurso de 2017 -->
+		<div class="jumbotron jumboconcurso">
+			<div class="container">
+				<h1 class="text-center">Belen Concurso 2017</h1>
+				<center><button type="button text-center" id="galerybutton" class="btn btn-default">Mostrar</button></center>
+			</div>
 		</div>
-	</div>
+		
 
-    <articles class="row">
+    <articles id="galery" class="row imghide">
 		<article class="col-md-3">
-			<a href="img/galery/belen2017_1.jpeg" data-lightbox="example-set" data-title="Belen 2017">
-			<img src="img/galery/belen2017_1.jpeg" alt="belen 2017" class="img-thumbnail"></a>
+			<a href="img/galery/2017/belen2017_1.JPG" data-lightbox="example-set" data-title="Belen 2017">
+				<img src="img/galery/2017/belen2017_1.JPG" alt="belen 2017" class="img-thumbnail">
+			</a>
 			<p></p>
 		</article>
 
 		<article class="col-md-3">
-			<a href="img/galery/belen2017_2.jpeg" data-lightbox="example-set" data-title="Belen 2017">
-			<img src="img/galery/belen2017_2.jpeg" alt="belen 2017" class="img-thumbnail"></a>
+			<a href="img/galery/2017/belen2017_2.JPG" data-lightbox="example-set" data-title="Belen 2017">
+				<img src="img/galery/2017/belen2017_2.JPG" alt="belen 2017" class="img-thumbnail">
+			</a>
+			<p></p>
+ 		</article>
+
+ 		<article class="col-md-3">
+			<a href="img/galery/2017/belen2017_3.JPG" data-lightbox="example-set" data-title="Belen 2017">
+				<img src="img/galery/2017/belen2017_3.JPG" alt="belen 2017" class="img-thumbnail">
+			</a>
+			<p></p>
+ 		</article>
+
+ 		<article class="col-md-3">
+			<a href="img/galery/2017/belen2017_4.JPG" data-lightbox="example-set" data-title="Belen 2017">
+				<img src="img/galery/2017/belen2017_4.JPG" alt="belen 2017" class="img-thumbnail">
+			</a>
 			<p></p>
  		</article>
     </articles>
 
-	<script src="lightbox/js/lightbox.min.js"></script>
-	  <script>
-		  lightbox.option({
-			'albumLabel': "Imagen %1 de %2"
-		  })
-	  </script>
+<!--Concurso de 2015 -->
+    <div class="jumbotron jumboconcurso">
+			<div class="container">
+				<h1 class="text-center">Belen Concurso 2015</h1>
+				<center><button type="button text-center" id="galerybutton2" class="btn btn-default">Mostrar</button></center>
+			</div>
+		</div>
+		
+
+    <articles id="galery2" class="row imghide" >
+		<article class="col-md-3">
+			<a href="img/galery/2015/belen2015_1.JPG" data-lightbox="example-set" data-title="Belen 2015">
+				<img src="img/galery/2015/belen2015_1.JPG" alt="belen 2015" class="img-thumbnail">
+			</a>
+			<p></p>
+		</article>
+
+		<article class="col-md-3">
+			<a href="img/galery/2015/belen2015_2.JPG" data-lightbox="example-set" data-title="Belen 2015">
+				<img src="img/galery/2015/belen2015_2.JPG" alt="belen 2015" class="img-thumbnail">
+			</a>
+			<p></p>
+ 		</article>
+
+ 		<article class="col-md-3">
+			<a href="img/galery/2015/belen2015_3.JPG" data-lightbox="example-set" data-title="Belen 2015">
+				<img src="img/galery/2015/belen2015_3.JPG" alt="belen 2015" class="img-thumbnail">
+			</a>
+			<p></p>
+ 		</article>
+
+ 		<article class="col-md-3">
+			<a href="img/galery/2015/belen2015_3.JPG" data-lightbox="example-set" data-title="Belen 2015">
+				<img src="img/galery/2015/belen2015_3.JPG" alt="belen 2015" class="img-thumbnail">
+			</a>
+			<p></p>
+ 		</article>
+    </articles>
+	
+
 </body>
 </html>
+
