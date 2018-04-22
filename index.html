@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -19,22 +20,37 @@
 		}
 
 		.titulo1{
+			text-shadow: none;
+			color: black;
 			font-size: 50px;
 			font-weight: bold;
 			background-color: grey;
 		}
 
 		.titulotexto{
-			padding-left: 30%;
+			padding: 25px 0 0 70px;
 			font-size: 20px;
-		}
+			 }
+			
+			.box1 div{ 
+				display: flex;
+  				justify-content: center;
+			}
+
+		
 
 		.box2{
+		
 
+		}
+
+		.pregunta{
+			font-size: 30px;
+			margin-top: 50px;
 		}
 
 		.personbox{
-			margin-top: 50px;
+			
 			padding-right:75px; 
 			padding-left:75px
 
@@ -48,50 +64,44 @@
 		.persondescrip{
 
 		}
-
-		footer {
-	      	background-color: #f2f2f2;
-	      	padding: 25px;
-	    }
+	
 
 	</style>
 </head>
 
 <body>
-	<div class="jumbotron">
+	<!-- imagen de portada-->
+	<div class="jumbotron portada">
 		<div class="container"> 		
 			<div class="row">
 				<div class="col-xs-6">
 					<h1 class="text-left logotext1">Orihuela</h1> 
 				</div> 
 				<div class="col-xs-6 jb2">    
-					<p  style="font-size: 40px;" class="text-right logotext2">Belenes<br>Castillo<br>Muñoz</p>
+					<h1  style="font-size: 40px;" class="text-right logotext2">Belenes<br>Castillo<br>Muñoz</h1>
 				</div>
 			</div>
 		</div>
 	</div>
-
+<!--menu del sitio-->
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
-		    <div class="navbar-header">
-		    	<a class="navbar-brand" href="#">WebSiteName</a>
-		    </div>
 		    <ul class="nav navbar-nav">
 		    	<li class="active"><a href="#">Home</a></li>
 		    	<li><a href="galeria.html">Galeria</a></li>
-				<li><a href="nuestrospremios.html">Nuestros Premios</a></li>
+				<li><a href="herramientasymateriales.html">Herramientas y Materiales</a></li>
 				<li><a href="historia.html">Historia</a></li>
 				<li><a href="contacto.html">Contacto</a></li>
 	    	</ul>
 		</div>
 	</nav>
-
+	<!-- box 1-->
 	<div class="container section1">
 		<div class="row box1">
 			<div class="col-md-6 text-center titulo1">
-				<p>¿Por que ser Belenista?</p>
+				<p class="titulo1">¿Por que ser Belenista?</p>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 divbox1">
 				<ul class="titulotexto">
 					<li>Es una gran practica imaginativa</li>
 					<li>Es ideal para entretener a los peques</li>
@@ -100,24 +110,42 @@
 			</div>
 		</div>
 	</div>
+	<!-- box de clarisa y conchi-->
 <div class="container">
-		<div class="row box2">
-			<div class="col-sm-6 personbox">
-				<p class="person text-center">Clarisa</p>
-				<p class="persondescrip">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </p>
-			</div>
-			<div class="col-sm-6 personbox">
-				<p class="person text-center">Conchi</p>
-				<p class="persondescrip">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-			</div>
+	<div class="row box2">
+		<p class="pregunta text-center">¿Como empezasteis a crear Belenes?</p>
+		<div class="col-sm-6 personbox">
+			<p class="person text-center">Clarisa</p>
+			<p class="persondescrip">- ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+		</div>
+		<div class="col-sm-6 personbox">
+			<p class="person text-center">Conchi</p>
+			<p class="persondescrip">-ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 		</div>
 	</div>
 
-	<footer class="container-fluid text-center">
-	  <p>Footer Text</p>
-	</footer>
+	<div>
+		<p class="pregunta text-center">¿Que es lo que mas os gusta de hacer belenes?</p>
+	</div>
+	<div class="row box2">
+		<div class="col-sm-6 personbox">
+			<p class="persondescrip">- ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+		</div>
+		<div class="col-sm-6 personbox">
+			<p class="persondescrip">-ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+		</div>
+	</div>
+</div>
+
+    <div id="footer" class="container-fluid text-center">
+	  <p>Sitio web creado por Miguel Verdu Muñoz</p>
+	</div>
 
 </body>
 </html>

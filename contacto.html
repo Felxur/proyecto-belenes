@@ -14,19 +14,97 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 	<style type="text/css">
-			
+	form {
+	    margin: 0 auto;
+	    width: 400px;
+	    padding: 1em;
+	    border-radius: 1em;
+	}
+
+	form div + div {
+	    margin-top: 1em;
+	}
+
+	label {
+	    display: inline-block;
+	    width: 100%;
+	    text-align: left;
+	}
+
+	input, textarea {
+	    font: 1em;
+	    width: 300px;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+
+	input:focus, textarea:focus {
+	    border-color: #000;
+	}
+
+	textarea {   
+	    height: 5em;
+	    resize: vertical;
+	}
+
+	.button {
+	    padding-left: 90px; 
+	}
+
+	button {
+	    /* Este margen extra representa aproximadamente el mismo espacio que el espacio
+	       entre los labels y sus campos de texto */
+	    margin-left: .5em;
+	}	
+	/*label {
+    display: inline-block;
+    width: 70px;
+    text-align: left;
+}
+	#formulario{
+		margin: 0  auto;
+		width: 60%;
+	}
+	#nombre{
+		width: 200px;
+	}
+	#email{
+		width: 250px;
+	}
+	input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+
+	}
+	textarea {
+    vertical-align: top;
+    height: 5em;
+
+    resize: vertical;
+}
+	input:focus, textarea:focus {
+    border-color: #000;
+}	
+button {
+  
+    margin-left: .5em;
+    padding-left: 90px;
+}*/
 	</style>
 </head>
 
 <body>
-	<div class="jumbotron">
+	<div class="jumbotron portada">
 		<div class="container"> 		
 			<div class="row">
 				<div class="col-xs-6">
 					<h1 class="text-left logotext1">Orihuela</h1> 
 				</div> 
 				<div class="col-xs-6 jb2">    
-					<p  style="font-size: 40px;" class="text-right logotext2">Belenes<br>Castillo<br>Muñoz</p>
+					<h1  style="font-size: 40px;" class="text-right logotext2">Belenes<br>Castillo<br>Muñoz</h1>
 				</div>
 			</div>
 		</div>
@@ -34,17 +112,60 @@
 
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
-		    <div class="navbar-header">
-		    	<a class="navbar-brand" href="#">WebSiteName</a>
-		    </div>
 		    <ul class="nav navbar-nav">
 		    	<li ><a href="index.html">Home</a></li>
 		    	<li><a href="galeria.html">Galeria</a></li>
-				<li><a href="nuestrospremios.html">Nuestros Premios</a></li>
+				<li><a href="herramientasymateriales.html">Herramientas y Materiales</a></li>
 				<li ><a href="historia.html">Historia</a></li>
 				<li class="active"><a href="#">Contacto</a></li>
 	    	</ul>
 		</div>
 	</nav>
+
+<p class="text-center">¿Quieres preguntarnos algo? Rellena el formulario y te responderemos lo antes posible.</p>
+	<!--<div class="container">
+		<form action="" method="post" id="formulario">
+	    	<div class="form-group">
+	      		<label id="label" for="nombre">Nombre:</label>
+	      		<input required type="text" class="form-control" name="nombre" id="nombre">
+	    	</div>
+	    	<div class="form-group">
+	    		<label id="label2" for="email">E-Mail</label>
+				<input required type="email" id="email" name="emailusuario">
+			</div>
+			<div class="form-group">
+				<label id="label3" for="comentario">Comentario</label>
+				<textarea  id="comentario" name="comentario" placeholder=""></textarea>
+			</div>
+			<input type="hidden" name="emailalumno" value="miguel.verdu90@gmail.com">
+						<input type="hidden" name="plantillacorreo" value="<p>Has recibido un nuevo formulario de contacto de %nombre% cuyo correo es: %emailusuario%<br>
+		El comentario es: %comentario%<br> </p>">
+						<input type="hidden" name="clavesecreta" value="3a881f46d2">
+						<button id="enviar" type="submit">Enviar</button>
+
+		</form>
+	</div>-->
+	<form action="/my-handling-form-page" method="post">
+    <div>
+        <label for="nombre">Nombre:</label>
+        <input required="" type="text" id="name" name="nombre" />
+    </div>
+    <div>
+        <label for="mail">E-mail:</label>
+        <input required="" type="email" id="mail" name="mail" />
+    </div>
+    <div>
+        <label for="mensage">Mensage:</label>
+        <textarea id="msg" name="mensage"></textarea>
+    </div>
+    
+    <div class="button">
+        <button type="submit">Enviar el mensage</button>
+    </div>
+</form>
+
+    <div id="footer" class="container-fluid text-center">
+	  <p>Sitio web creado por Miguel Verdu Muñoz</p>
+	</div>
 </body>
 </html>
