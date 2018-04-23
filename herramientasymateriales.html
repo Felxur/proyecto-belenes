@@ -12,14 +12,21 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<style type="text/css">
-	#slider{
-		width: 600px;
-		height: 300px;
-		margin: 0 auto; 
-			display: -webkit-flex;
-			display: -ms-flexbox;
-			display: flex;
-			justify-content: center;
+	
+	.fotoherramienta{
+		
+		margin-bottom: 50px;
+		
+	}
+	.fotoherramienta p{
+		padding-top: 10px;
+		max-width:300px; 
+	}
+
+	.pregunta{
+		margin-bottom: 50px;
+		font-size: 30px;
+		margin-top: 50px;
 	}
 
 			
@@ -44,82 +51,69 @@
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 		    <ul class="nav navbar-nav">
-		    	<<li><a href="index.html">Home</a></li>
-		    	<li><a href="galeria.html">Galeria</a></li>
+		    	<li><a href="index.html">Home</a></li>
+		    	<li><a href="galeria.html">Galería</a></li>
 				<li class="active"><a href="#">Herramientas y Materiales</a></li>
-				<li><a href="historia.html">Historia</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="historia.html">Historia </a></li>
+				<li><a href="contacto.html">Contacto </a></li>
 	    	</ul>
 		</div>
 	</nav>
-<!--
-<script>
-   $(document).ready(function(){
-        $('.myCarousel').carousel({
-            interval: 2000
-        });
-    });
-</script>-->
-	
-		<div id="slider" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-			   	<li data-target="#slider" data-slide-to="0" class="active"></li>
-			    <li data-target="#slider" data-slide-to="1"></li>
-			    <li data-target="#slider" data-slide-to="2"></li>
-			</ol>
 
-		  <div class="carousel-inner">
-		    <div class="item active">
-		    	<a href="#"><img src="img/herramientas/herramienta.jpg" /></a>
-		    	<div class="carousel-caption">
-		    		<h3>Texto de prueba para herramientas</h3>
-		        	<p>descripcion para las herramientas</p>
-		    	</div>
-		    </div>
-		    <div class="item">
-		    	<a href="#"><img src="img/herramientas/herramienta2.jpg" /></a>
-		    	<div class="carousel-caption">
-		        	<h3>Texto de prueba para herramientas</h3>
-		        	<p>descripcion para las herramientas</p>
-		      	</div>
-		    </div>
-		    <div class="item">
-		      	<a href="#"><img src="img/herramientas/herramienta3.jpg" /></a>
-		      	<div class="carousel-caption">
-		        	<h3>Texto de prueba para herramientas</h3>
-		        	<p>descripcion para las herramientas</p>
-		      	</div>
-		    </div>
-		  </div>
+	<div class="container text-center">
 
-		  	<a class="left carousel-control" href="#slider" data-slide="prev">
-		    	<span class="glyphicon glyphicon-chevron-left"></span>
-		  	</a>
-		  	<a class="right carousel-control" href="#slider" data-slide="next">
-		    	<span class="glyphicon glyphicon-chevron-right"></span>
-			</a>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<img src="img/herramientas/herramienta2.jpg">
-					<p>Texto de prueba</p>
-				</div>
-				<div class="col-md-4">
-					<img src="img/herramientas/herramienta2.jpg">
-					<p>texto de prueba</p>
-				</div>
-				<div class="col-md-4">
-					<img src="img/herramientas/herramienta2.jpg">
-					<p>texto de prueba</p>
-				</div>
+		<p class="text-center pregunta">¿Quieres saber que utilizamos para crear nuestros belenes?</p>
+	<!--Primera linea de fotos-->
+		<div class="row">
+			<div class="col-sm-4 fotoherramienta">
+				<img class="img-responsive" src="img/herramientas/herramienta.jpg">
+				<p> Láminas de porexpan. Las usamos para crear los edificios y suelos.</p>
+			</div>
+			<div class="col-sm-4 fotoherramienta">
+				<img class="img-responsive" src="img/herramientas/herramienta2.jpg">
+				<p>Cola de carpintero. No tiene misterio ninguno, ¿verdad?</p>
+			</div>
+			<div class="col-sm-4 fotoherramienta">
+				<img class="img-responsive" src="img/herramientas/herramienta3.jpg">
+				<p>Pintura. Solemos usar pintura en polvo y lo mezclamos con cola.</p>
 			</div>
 		</div>
+	<!--segunda linea de fotos-->
+		<div class="row">
+			<div class="col-sm-4 fotoherramienta">
+				<img class="img-responsive" src="img/herramientas/herramienta4.jpg">
+				<p>Cutter Compass. Muy útil, corta en círculos que puedes medir con su propia regla.</p>
+			</div>
+			<div class="col-sm-4 fotoherramienta">
+				<img class="img-responsive" src="img/herramientas/herramienta5.jpg">
+				<p>Cutter. Cuidado que corta.</p>
+			</div>
+			<div class="col-sm-4 fotoherramienta">
+				<img class="img-responsive" src="img/herramientas/herramienta6.jpg">
+				<p>Lija. Unas cuantas buenas lijas para suavizar bordes y esquinas o para hacer más pequeño aquel hueco que he cortado regular.</p>
+			</div>
+		</div>
+	<!--tercera linea de fotos-->
+		<div class="row">
+			<div class="col-sm-4 fotoherramienta">
+				<img class="img-responsive" src="img/herramientas/herramienta7.jpg">
+				<p>Silicona trasnparente. Sirve tanto para pegar como para dar algún efecto como de alguna fuente donde cae el agua.</p>
+			</div>
+			<div class="col-sm-4 fotoherramienta">
+				<img class="img-responsive" src="img/herramientas/herramienta8.jpg">
+				<p>Plantas. Si, plantas silvestres y reales como puede ser Tomillo son realmente útiles en ramitas para representar arbustos o arboles iqueños. La imaginación es tu limite.</p>
+			</div>
+			<div class="col-sm-4 fotoherramienta">
+				<img class="img-responsive" src="img/herramientas/herramienta9.jpg">
+				<p>Escayola. Puedes usarla para dar sensación de rugosidad a las paredes o tapar agujeros, es muy útil. </p>
+			</div>
+		</div>
+	</div>
 
 
     <div id="footer" class="container-fluid text-center">
 	  <p>Sitio web creado por Miguel Verdu Muñoz</p>
 	</div>
+
 </body>
 </html>

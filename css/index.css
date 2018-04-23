@@ -1,0 +1,51 @@
+		.box1{
+			border:1px solid black;
+		}
+
+		.titulo1{
+			text-shadow: none;
+			color: black;
+			font-size: 50px;
+			font-weight: bold;
+			background-color: grey;
+		}
+
+		.titulotexto{
+			padding: 25px 0 0 70px;
+			font-size: 20px;
+			 }
+			
+			.box1 div{ 
+				display: flex;
+  				justify-content: center;
+			}
+
+		
+
+		.box2{
+		
+
+		}
+
+		.pregunta{
+			font-size: 30px;
+			margin-top: 50px;
+		}
+
+		.personbox{
+			
+			padding-right:75px; 
+			padding-left:75px
+
+		}
+
+		.person{
+			font-family: 'Courgette', cursive;
+			font-size: 30px;
+			text-decoration: underline;	
+		}
+
+		.persondescrip{
+
+		}
+	
